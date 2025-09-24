@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔐 Password Generator</h1>
+
+        <label for="letters">Number of Letters:</label>
+        <input type="number" id="letters" min="0" value="4">
+
+        <label for="symbols">Number of Symbols:</label>
+        <input type="number" id="symbols" min="0" value="2">
+
+        <label for="numbers">Number of Numbers:</label>
+        <input type="number" id="numbers" min="0" value="2">
+
+        <button onclick="generatePassword()">Generate Password</button>
+
+        <div id="result">
+            <p>Your Password:</p>
+            <h2 id="password"></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
